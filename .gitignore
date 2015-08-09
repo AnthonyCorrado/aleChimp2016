@@ -1,5 +1,9 @@
+# client side
 /public/node_modules
 /public/dist
 /public/.tmp
 /public/.sass-cache
 /public/bower_components
+
+# server side
+api/node_modules
