@@ -10,8 +10,11 @@
          vm.submit = submit;
 
       function submit() {
-        var url = '/';
-        var user = "";
+        var url = 'http://localhost:3000/signup';
+        var user = {
+          name: 'Anthony'
+        };
+        console.log(url, 'url');
         $http.post(url, user)
           .success(function(res) {
             console.log(res, 'this good');
