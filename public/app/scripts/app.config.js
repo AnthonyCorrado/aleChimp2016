@@ -27,6 +27,12 @@
       templateUrl: 'views/login.html',
       controller: 'LoginCtrl',
       controllerAs: 'vm'
+    })
+
+    .state('logout', {
+      url: '/logout',
+      controller: 'LogoutCtrl',
+      controllerAs: 'vm'
     });
   });
 })();

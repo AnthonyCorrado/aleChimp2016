@@ -11,6 +11,7 @@
       vm.submit = submit;
       vm.email = '';
       vm.password = '';
+      vm.count = 1;
 
       /*jshint latedef: nofunc */
       function submit() {
@@ -22,7 +23,9 @@
 
         $http.post(url, user)
           .success(function(res) {
-            toastr.success('Welcome', user);
+            console.log(user, 'this is user');
+            console.log(res, 'this is res');
+            toastr.success(res.user.email, 'Welcome!');
             authToken.setToken(res.token);
           })
           .error(function(err) {

@@ -8,8 +8,7 @@
     /*jshint latedef: nofunc */
     function HeaderCtrl(authToken) {
       var vm = this;
-      console.log(authToken.isAuthenticated(), 'is Auth');
 
-      vm.isAuthenticated = authToken.isAuthenticated();
+      vm.isAuthenticated = authToken.isAuthenticated;
     }
 })();
