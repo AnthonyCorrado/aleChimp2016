@@ -1,0 +1,14 @@
+.btn-lg, .btn-group-lg > .btn {
+    border-radius: 0;
+}
+.form-control {
+    border-radius: 0;
+}
+.form-signin input[type="password"] {
+    margin-bottom: -1px;
+    border-bottom: 0;
+}
+
+/*.toast-error {
+    background-color: hotpink;
+}*/
