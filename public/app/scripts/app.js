@@ -12,5 +12,6 @@ angular
   .module('aleChimp2016App', [
     'ngAnimate',
     'ngTouch',
-    'ui.router'
+    'ui.router',
+    'toastr'
   ]);

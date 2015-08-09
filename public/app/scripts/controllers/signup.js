@@ -5,7 +5,7 @@
     .module('aleChimp2016App')
     .controller('SignupCtrl', Signup);
 
-    function Signup($http) {
+    function Signup($http, toastr) {
       var vm = this;
          vm.submit = submit;
 
@@ -15,11 +15,14 @@
         $http.post(url, user)
           .success(function(res) {
             console.log(res, 'this good');
+            toastr.success('Welcome', user);
           })
           .error(function(err) {
-            console.log(err, 'error');
+            toastr.error(err, 'Signup Failed');
+            // toastr.error(err, 'Signup Failed', {
+            //   iconClass: 'toast-error'
+            // });
           });
-        console.log('this worked');
       } 
     }
 })();
