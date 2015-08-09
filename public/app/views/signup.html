@@ -1,12 +1,12 @@
 <form ng-submit="vm.submit()" name="signup" class="form-signin" novalidate>
     <h1 class="form-signin-heading text-muted">Sign Up</h1>
-    <input name="email" type="email" class="form-control" placeholder="Email address" ng-model="email" required>
+    <input name="email" type="email" class="form-control" placeholder="Email address" ng-model="vm.email" required>
         <p class="help-block" ng-show="signup.email.$dirty && signup.email.$invalid">Invalid Email</p>
 
     <input name="password" type="password" class="form-control" placeholder="Password"
-        ng-model="password" required>
+        ng-model="vm.password" required>
     <input name="password_confirm" type="password" class="form-control" placeholder="Confirm Password"
-        ng-model="password_confirm" validate-equals='password'>
+        ng-model="password_confirm" validate-equals='vm.password'>
         <p class="help-block" ng-show="signup.password_confirm.$dirty && signup.password_confirm.$invalid">
             passwords do not match</p>
 
