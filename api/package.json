@@ -9,6 +9,9 @@
   "author": "anthony corrado",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.13.3"
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.13.3",
+    "crypto": "0.0.3",
+    "mongoose": "^4.1.1"
   }
 }
