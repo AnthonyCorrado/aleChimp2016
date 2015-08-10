@@ -33,6 +33,27 @@
       url: '/logout',
       controller: 'LogoutCtrl',
       controllerAs: 'vm'
+    })
+
+    .state('dashboard', {
+      url: '/dashboard',
+      templateUrl: 'views/dashboard.html',
+      controller: 'DashboardCtrl',
+      controllerAs: 'vm'
+    })
+
+    .state('dashboard.add', {
+      url: '/add',
+      templateUrl: 'views/dashboard-add.html',
+      controller: 'AddIndexCtrl',
+      controllerAs: 'vm'
+    })
+
+    .state('dashboard.show', {
+      url: '/show',
+      templateUrl: 'views/dashboard-show.html',
+      controller: 'ShowIndexCtrl',
+      controllerAs: 'vm'
     });
   });
 })();

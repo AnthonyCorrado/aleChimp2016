@@ -39,7 +39,7 @@ app.post('/signup', function(req, res) {
 
 });
 
-mongoose.connect('mongodb://localhost/aleChimp2016');
+mongoose.connect('mongodb://localhost/');
 
 var server = app.listen(3000, function() {
   console.log('api listening on ', server.address().port);
